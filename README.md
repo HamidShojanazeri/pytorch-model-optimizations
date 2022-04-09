@@ -25,13 +25,13 @@ TPU : Two dimensional vectors
 
 Memory layouts shown below, play an important role in the perfromance. 
 
-<img width="564" alt="Screen Shot 2022-04-08 at 5 57 49 PM" src="https://user-images.githubusercontent.com/9162336/162550272-1f509587-476e-4fbd-9409-2b6faa8eb443.png">
+<img width="250" alt="Screen Shot 2022-04-08 at 5 57 49 PM" src="https://user-images.githubusercontent.com/9162336/162550272-1f509587-476e-4fbd-9409-2b6faa8eb443.png">
 
 [TVM Paper](https://arxiv.org/pdf/1802.04799.pdf)
 
 ##### IRs (Intermediate Representations)
 
-Frameworks do not target many different compilers instead they provide IR as bridge between framework and hardware, then hardware compaines take the IR and compile (lower) it for their chip.
+Frameworks do not target many different compilers instead they provide IR as bridge between framework and hardware, then hardware compaines take the IR and compile (lower) it for their chip, machine code.  Compiler take the IR, generate high level and low level code using codegen (mostly LLVM)
 
 ### ML Hardware Startups
 
