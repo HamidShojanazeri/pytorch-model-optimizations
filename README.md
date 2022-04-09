@@ -25,7 +25,7 @@ TPU : Two dimensional vectors
 
 Memory layouts shown below, play an important role in the perfromance. 
 
-<img width="250" alt="Screen Shot 2022-04-08 at 5 57 49 PM" src="https://user-images.githubusercontent.com/9162336/162550272-1f509587-476e-4fbd-9409-2b6faa8eb443.png">
+<img width="150", height="150" alt="Screen Shot 2022-04-08 at 5 57 49 PM" src="https://user-images.githubusercontent.com/9162336/162550272-1f509587-476e-4fbd-9409-2b6faa8eb443.png">
 
 [TVM Paper](https://arxiv.org/pdf/1802.04799.pdf)
 
