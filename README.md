@@ -1,4 +1,4 @@
-# pytorch-model-optimizations 
+# Pytorch model optimizations for inference
 
 ## High level ideas
 
