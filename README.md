@@ -6,7 +6,8 @@
 - Taget hardware -- figure out ideal hardware based on the model size/ available optimizations for HW, Cost
 - Choose a path to optimize model -- it's a tarade of between the effort and perfromance gain/ needs
 - Use Pytorch out-of-box techniques, Quantizaiton (works for CPU), Torchscript (gives you a graph/ remove dependency to Python), Pruning (not very popular)
-- Use model compilers -- ORT, IPEX, TensorRT, TVM
+- Use model compilers --TensorRT, TVM 
+- OR offerings by IPEX and OnnxRuntime
 
 
 #### Target hardware 
