@@ -1,4 +1,11 @@
 # Pytorch model optimizations for inference
+## Find the buttleneck
+Running efficinet DL model boild down to three components:
+
+- Compute : time spent on GPU running actual FLOPS
+- Memory :time spend to trnasder data from CPU to GPU
+- Overhead : everythings else:
+Great [blog](https://horace.io/brrr_intro.html) from Horace.
 
 ## High level ideas
 
@@ -33,8 +40,3 @@ Memory layouts shown below, play an important role in the perfromance.
 ##### IRs (Intermediate Representations)
 
 Frameworks do not target many different compilers instead they provide IR as bridge between framework and hardware, then hardware compaines take the IR and compile (lower) it for their chip, machine code.  Compiler take the IR, generate high level and low level code using codegen (mostly LLVM)
-
-### ML Hardware Startups
-
-![image](https://user-images.githubusercontent.com/9162336/162549770-4e55d378-97b8-4816-80e2-ffe4872f137d.png)
-https://huyenchip.com/2021/09/07/a-friendly-introduction-to-machine-learning-compilers-and-optimizers.html
