@@ -40,3 +40,13 @@ Memory layouts shown below, play an important role in the perfromance.
 ##### IRs (Intermediate Representations)
 
 Frameworks do not target many different compilers instead they provide IR as bridge between framework and hardware, then hardware compaines take the IR and compile (lower) it for their chip, machine code.  Compiler take the IR, generate high level and low level code using codegen (mostly LLVM)
+
+
+## Trasnformer Optimizations
+
+### Flash Attention
+
+The idea here is to avoid mutliple access to gloabl memory of GPU, how to do that?
+- Tiling the matmul a great Tutorial https://github.com/ELS-RD/kernl/blob/main/tutorial/1%20-%20tiled%20matmul.ipynb
+- Recomputation attention matix in backward pass instead of saving great tutorial https://github.com/ELS-RD/kernl/blob/main/tutorial/4%20-%20flash%20attention.ipynb
+-
